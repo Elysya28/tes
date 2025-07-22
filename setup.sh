@@ -902,7 +902,7 @@ cd
     clear
     print_install "Memasang Menu Packet"
     wget ${REPO}menu/menu.zip
-    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Elysya28/tes/main/encrypt" ; chmod +x /usr/bin/enc
+    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/daneshswara29/instalasi/main/encrypt/encrypt" ; chmod +x /usr/bin/enc
     7z x -p@Elysya28 menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
