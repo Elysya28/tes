@@ -48,7 +48,7 @@ sleep 2
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/Guna-wan22/permission/main/ip"
+data_ip="https://raw.githubusercontent.com/Elysya28/permision/main/ip"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -116,7 +116,7 @@ gem install lolcat
 apt install wondershaper -y
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/Guna-wan22/script/main/"
+    REPO="https://raw.githubusercontent.com/Elysya28/tes/main/"
 
 ####
 start=$(date +%s)
@@ -286,7 +286,7 @@ restart_system(){
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m" 
 clear
-izinsc="https://raw.githubusercontent.com/Guna-wan22/permission/main/ip"
+izinsc="https://raw.githubusercontent.com/Elysya28/permision/main/ip"
 # USERNAME
 rm -f /usr/bin/user
 username=$(curl $izinsc | grep $MYIP | awk '{print $2}')
@@ -325,8 +325,8 @@ fi
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 MODEL2=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 TIMES="10"
-CHATID="702916090"
-KEY="6782550545:AAEQJCiVZvTvu-2vvd5z4I4I4V7-W3lwIyM"
+CHATID="1094823863"
+KEY="7556182361:AAHudjG3yLHOZ_MdRaJcBHq4HfNEnAKZDqs"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
@@ -344,7 +344,7 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
 <code>Exp Sc.  :</code><code>$exp</code>
 <code>━━━━━━━━━━━━━━━━━━━━━━━━━</code>
 <i>Automatic Notifications From Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"http://t.me/IMstore24"}]]}' 
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/karelforta"}]]}' 
 
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
@@ -551,7 +551,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit IP & Quota"
-wget -q https://raw.githubusercontent.com/Guna-wan22/script/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
+wget -q https://raw.githubusercontent.com/Elysya28/tes/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
 
 # // Installing UDP Mini
 mkdir -p /usr/local/kyt/
@@ -773,7 +773,7 @@ print_success "ePro WebSocket Proxy"
 }
 function noobzvpn(){
 clear
-wget --no-check-certificate https://raw.githubusercontent.com/Guna-wan22/script/main/noobzvpns.zip
+wget --no-check-certificate https://raw.githubusercontent.com/Elysya28/tes/main/noobzvpns.zip
 unzip noobzvpns.zip
 cd noobzvpns
 bash install.sh
@@ -902,8 +902,8 @@ cd
     clear
     print_install "Memasang Menu Packet"
     wget ${REPO}menu/menu.zip
-    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/daneshswara29/instalasi/main/encrypt/encrypt" ; chmod +x /usr/bin/enc
-    7z x -p@Guna-wan22 menu.zip
+    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Elysya28/tes/main/encrypt" ; chmod +x /usr/bin/enc
+    7z x -p@Elysya28 menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
     rm -rf menu
