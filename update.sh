@@ -28,8 +28,7 @@ fun_bar() {
 }
 res1() {
     wget https://raw.githubusercontent.com/Elysya28/tes/main/menu/menu.zip
-    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Elysya28/tes/main/encrypt" ; chmod +x /usr/bin/enc
-    7z x -p@Elysya28 menu.zip
+    unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
     rm -rf menu
